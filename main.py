@@ -32,6 +32,8 @@ cv.fillPoly(img, [triangle2], (75,200,70))
 font = cv.FONT_HERSHEY_SCRIPT_SIMPLEX
 cv.putText(img, "~AkD Developers~", (100,460), font, 1.5, (255,255,255), 2)
 
+
+cv.imwrite("akd.png", img)
 cv.imshow("AkD", img)
 cv.waitKey(0)
 cv.destroyAllWindows()
